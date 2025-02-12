@@ -112,7 +112,7 @@ class AuthForm extends React.Component {
             авторизации другим способом:
 
             <ul>
-              <li><a href="https://github.com/es3n1n/yandex-music-token/releases/download/latest/app-release.apk">Android приложение</a></li>
+              <li><a href="https://github.com/es3n1n/yandex-music-token/releases/latest/download/app-release.apk">Android приложение</a></li>
               <li><a
                   href="https://chrome.google.com/webstore/detail/playinnowbot/jgocamehhjhbhomfnhknmiljlhjbaldg">Расширение
                 для Google Chrome</a></li>
