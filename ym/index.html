@@ -7,15 +7,20 @@
 </head>
 <body>
     <script>
-        if (window.location.hash.length > 0) {
-            const params = window.location.hash.substring(1);
-            window.location.href = window.location.origin +
-                                   '/ext/yandex/callback' +
-                                   '?' + params;
+        function entry() {
+            if (window.location.hash.length > 0) {
+                const params = window.location.hash.substring(1);
+                window.location.href = window.location.origin +
+                    '/ext/yandex/callback' +
+                    '?' + params;
+                return;
+            }
+
+            /// No token, redirect back to the bot
+            window.location.href = window.location.origin + '/';
         }
 
-        /// No token, redirect back to the bot
-        window.location.href = window.location.origin + '/';
+        entry()
     </script>
 </body>
 </html>
