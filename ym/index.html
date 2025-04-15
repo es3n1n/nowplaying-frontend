@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playinnowbot - Yandex</title>
+</head>
+<body>
+    <script>
+        if (window.location.hash.length > 0) {
+            const params = window.location.hash.substring(1);
+            window.location.href = window.location.origin +
+                                   '/ext/yandex/callback' +
+                                   '?' + params;
+        }
+
+        /// No token, redirect back to the bot
+        window.location.href = window.location.origin + '/';
+    </script>
+</body>
+</html>
+
